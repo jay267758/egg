@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../public/css/index.css">
+  <title>Document</title>
+</head>
+<body>
+  <h2>所以nunjucks引擎, 展示HTML页面</h2>
+  <p>年份：{{ nianfen }}</p>
+  <p>名称：{{ name }}</p>
+  <ul>
+    {% for item in interest %}
+    <li>
+      <a href='{{ item.url }}'>{{ item.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
