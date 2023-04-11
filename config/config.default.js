@@ -47,7 +47,7 @@ module.exports = appInfo => {
 
   config.session = {
     key: 'session', // 设置session的key
-    httpOnly: false, // 允许客户端修改session值
+    // httpOnly: false, // 允许客户端修改session值
     maxAge: 1000 * 60, // 有效时间
     // renew: true, // 如一直操作就刷新有效值, 否则时间到就失效
   };
